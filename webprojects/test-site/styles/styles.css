@@ -1,0 +1,33 @@
+html{
+	font size: 10px;
+	font-family: 'Fira Sans', sans-serif;
+}
+h1{
+	font-size: 60px;
+	text-align:center;
+	margin:0;
+	padding: 20px 0;
+	color: #F6FAFE;
+	text-shadow: 3px 3px 1px black;
+}
+p,li{
+	font-size: 16 px;
+	line-height: 2;
+	letter-spacing:1 px;
+	color:#F6FAFE;
+	
+}
+body{
+	width: 600 px;
+	margin: 0 auto;
+	background-color:#1B487B;
+	padding: 0 20px 10px 10 px;
+	border: 5px solid black;
+	color:#F6FAFE;
+}
+img{
+	display: block;
+	margin: 0 auto;
+	max-width: auto;
+	max-height: 360px;
+}
