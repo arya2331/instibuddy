@@ -8,7 +8,7 @@ myImage.onclick= function(){
 		myImage.setAttribute ('src','images/horseicon.jpg');
 	}
 }
-let myButton = document.querySelector('button');
+let myButton = document.getElementById('button');
 let myHeading = document.querySelector('h1');
 function setUsername(){
 	let myName = prompt('Please enter your name.');
