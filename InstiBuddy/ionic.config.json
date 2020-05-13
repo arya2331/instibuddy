@@ -1,0 +1,7 @@
+{
+  "name": "InstiBuddy",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
