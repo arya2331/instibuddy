@@ -11,9 +11,15 @@ const routes: Routes = [
         path: 'tab1',
         loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
       },
+      { path:'tab1/mainpage', loadChildren: () => import('../tab1/mainpage/mainpage.module').then(m => m.MainpagePageModule)},
+      { path:'tab1/depts', loadChildren: () => import('../tab1/depts/depts.module').then(m => m.DeptsPageModule)},
+      { path:'tab1/individualcontact', loadChildren: () => import('../tab1/individualcontact/individualcontact.module').then(m => m.IndividualcontactPageModule)},
+      { path:'tab1/professors', loadChildren: () => import('../tab1/professors/professors.module').then(m => m.ProfessorsPageModule)},
       {
         path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        loadChildren: () => import('../tab2/tab2.module').then(m => {
+          return m.Tab2PageModule;
+        })
       },
 
       {path: 'tab2/PageList',
