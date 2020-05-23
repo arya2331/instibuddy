@@ -13,13 +13,21 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content padding>
-<h1> Sports Feed </h1>
-    <ion-button color="primary" routerLink="/tabs/tab2/page-list" routerDirection="forward">Tennis Club</ion-button><br>
-    <ion-button color="primary" routerLink="/tabs/tab2/page-list" routerDirection="forward">Football Club</ion-button> <br>
-    <ion-button color="primary" routerLink="/tabs/tab2/page-list" routerDirection="forward">Cricket Club</ion-button> <br>
- <h1> Cult Feed </h1> 
- <ion-button color="primary" routerLink="/tabs/tab2/page-list" routerDirection="forward">ForthWall</ion-button><br>
-    <ion-button color="primary" routerLink="/tabs/tab2/page-list" routerDirection="forward">The Design Club</ion-button> <br>
-    <ion-button color="primary" routerLink="/tabs/tab2/page-list" routerDirection="forward">Insync</ion-button> <br>
+<ion-content padding>
+
+    <ion-list>
+              <ion-item>
+                <ion-label>Select Club or Page</ion-label>
+                  <ion-select [(ngModel)]="page_list" name="pagelist" placeholder="Select page">
+                    <ion-select-option value="Tennis club">Tennis club</ion-select-option>
+                    <ion-select-option value="Cricket club">Cricket club</ion-select-option>
+                    <ion-select-option value="Insync">Insync</ion-select-option>
+                    <ion-select-option value="Pixel">Pixel</ion-select-option>
+                  </ion-select>
+      </ion-item>
+  <ion-button color="primary" routerLink="/tabs/tab2/page-list" routerDirection="forward">Submit</ion-button>
+           
+  </ion-list>
   </ion-content>
+
+  
