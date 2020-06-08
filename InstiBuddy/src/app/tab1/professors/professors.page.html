@@ -9,16 +9,10 @@
 
 <ion-content>
   <ion-list >
-    <div style="text-align: center; padding: 20px;"><ion-label >Department X</ion-label></div>
-    <ion-row><ion-col><ion-item lines="full"><ion-label routerLink='/tabs/tab1/individualcontact' routerDirection="forward">Prof A</ion-label></ion-item></ion-col>
-    <ion-col><ion-item lines="full"><ion-label>123456789</ion-label></ion-item></ion-col></ion-row>
-    <ion-row><ion-col><ion-item lines="full"><ion-label  routerLink='/tabs/tab1/individualcontact' routerDirection="forward">Prof B</ion-label></ion-item></ion-col>
-    <ion-col><ion-item lines="full">234567891</ion-item></ion-col></ion-row>
-    <ion-row><ion-col><ion-item lines="full"><ion-label  routerLink='/tabs/tab1/individualcontact' routerDirection="forward">Prof C</ion-label></ion-item></ion-col>
-      <ion-col><ion-item lines="full">345678912</ion-item></ion-col></ion-row>
-    <ion-row><ion-col><ion-item lines="full"><ion-label  routerLink='/tabs/tab1/individualcontact' routerDirection="forward">Prof D</ion-label></ion-item></ion-col>
-      <ion-col><ion-item lines="full">456789123</ion-item></ion-col></ion-row>
-    <ion-row><ion-col><ion-item lines="full"><ion-label  routerLink='/tabs/tab1/individualcontact' routerDirection="forward">Prof E</ion-label></ion-item></ion-col>
-      <ion-col><ion-item lines="full">567891234</ion-item></ion-col></ion-row>
+    <div style="text-align: center; padding: 20px;"><ion-label >Department</ion-label></div>
+    <div *ngFor="for prof of response"><ion-row><ion-col><ion-item lines="full">
+      <ion-label routerLink='/tabs/tab1/individualcontact' routerDirection="forward">{{ prof.prof_Name }}</ion-label>
+    </ion-item></ion-col>
+    <ion-col><ion-item lines="full"><ion-label>{{ prof.phone_number }}</ion-label></ion-item></ion-col></ion-row></div>
   </ion-list>
 </ion-content>

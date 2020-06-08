@@ -16,9 +16,9 @@ with open('faculty4.csv', 'w', newline='') as f:
      for fac_elem in fac_elems:
 
              fac_name = fac_elem.find('div', class_='field field-name-title field-type-ds field-label-hidden')
-             fac_tele = fac_elem.find('div', class_='field field-name-field-emp-phone field-type-text field-label-inline clearfix')
-             fac_email = fac_elem.find('div', class_='field field-name-field-emp-email field-type-email field-label-inline clearfix')
-             fac_interests = fac_elem.find('div', class_='field field-name-field-emp-role field-type-text-long field-label-inline clearfix')
+             fac_tele = fac_elem.find_all('div', class_='field field-name-field-emp-phone field-type-text field-label-inline clearfix')
+             fac_email = fac_elem.find_all('div', class_='field field-name-field-emp-email field-type-email field-label-inline clearfix')
+             fac_interests = fac_elem.find_all('div', class_='field field-name-field-emp-role field-type-text-long field-label-inline clearfix')
              if None in(fac_name, fac_tele, fac_email, fac_interests):
                 continue
 
