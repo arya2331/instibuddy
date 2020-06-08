@@ -10,8 +10,8 @@
 <ion-content>
   <ion-list >
     <div style="text-align: center; padding: 20px;"><ion-label >Department</ion-label></div>
-    <div *ngFor="for prof of response"><ion-row><ion-col><ion-item lines="full">
-      <ion-label routerLink='/tabs/tab1/individualcontact' routerDirection="forward">{{ prof.prof_Name }}</ion-label>
+    <div *ngFor="let prof of response"><ion-row><ion-col><ion-item lines="full">
+      <ion-label routerLink='/tabs/tab1/dept/{{ prof.prof_Name }}' routerDirection="forward">{{ prof.prof_Name }}</ion-label>
     </ion-item></ion-col>
     <ion-col><ion-item lines="full"><ion-label>{{ prof.phone_number }}</ion-label></ion-item></ion-col></ion-row></div>
   </ion-list>

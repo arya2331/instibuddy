@@ -26,6 +26,17 @@ def api_detail_scrapcode_view(request):
         serializer=ScrapcodeSerializer(scrapcode, many=True)
         return Response(serializer.data)
 
+
+@api_view(['POST',])
+def api_name_scrapcode_view(request):
+    try:
+        scrapcode= Scrapcode.objects.filter(prof_Name=request.data["name"])
+    except Scrapcode.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+    if request.method== 'POST':
+        serializer=ScrapcodeSerializer(scrapcode, many=True)
+        return Response(serializer.data)
+
 def get_Recipe_cese(request):
     # outfile = open("scrape.csv", 'w', newline='')
     # writer = csv.writer(outfile)
