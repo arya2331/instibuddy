@@ -8,6 +8,7 @@ from . import views
 urlpatterns = [
     path('dept/',views.api_detail_scrapcode_view,name='detail'),
     path('name/',views.api_name_scrapcode_view,name='name'),
+    path('search/',views.api_search_scrapcode_view,name='search'),
     #path('',include(router.urls)),
     path('api-auth/', include('rest_framework.urls',namespace='rest_framework')),
     path('cese/', views.get_Recipe_cese, name='get_Recipe_cese'),
