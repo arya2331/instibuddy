@@ -15,7 +15,7 @@
 
 <ion-content padding>
 
-    <ion-list>
+  <!--  <ion-list>
               <ion-item>
                 <ion-label>Select Club or Page</ion-label>
                   <ion-select [(ngModel)]="page_list" name="pagelist" placeholder="Select page">
@@ -27,7 +27,173 @@
       </ion-item>
   <ion-button color="primary" routerLink="/tabs/tab2/page-list" routerDirection="forward">Submit</ion-button>
            
-  </ion-list>
-  </ion-content>
+  </ion-list>-->
+
+
+  <div class="no-scrollbar">
+    <ion-card text-wrap>
+    
+<ion-item>
+  <h3>CULTURAL PAGES</h3>
+  <ion-select  [(ngModel)]="club" placeholder="What club?">
+    <ion-select-option value="Culturals@IITB">Culturals@IITB</ion-select-option>  
+    <ion-select-option value="Rang -The Fine Arts Club of IIT B">Rang -The Fine Arts Club of IIT B</ion-select-option>
+    <ion-select-option value="Surbahaar - IITB">Surbahaar - IITB</ion-select-option>
+    <ion-select-option value="The Design Club, IIT Bombay">The Design Club, IIT Bombay</ion-select-option>
+    <ion-select-option value="Pixels - The Photography Club of IIT Bombay">Pixels - The Photography Club of IIT Bombay</ion-select-option>
+    <ion-select-option value="Virasat">Virasat</ion-select-option>
+    <ion-select-option value="Vaani - Indian Languages Club of IIT Bombay">Vaani - Indian Languages Club of IIT Bombay</ion-select-option>
+    <ion-select-option value="Symphony,IIT Bombay">Symphony,IIT Bombay</ion-select-option>
+
+    
+  </ion-select>  
+
+      </ion-item>
+
+
+<ion-item>
+  <h3>SPORTS CLUBS</h3>  
+        <ion-select  [(ngModel)]="club" placeholder="Which sports club?">
+         <ion-select-option value="chess club">The dark Knight,Chess Club-IITB</ion-select-option>  
+         <ion-select-option value="yogastha">Yogastha-IIT Bombay Wellness Club</ion-select-option>  
+         <ion-select-option value="IIT Bombay Sports">IIT Bombay Sports</ion-select-option>  
+         <ion-select-option value="Adventure Sports Club IIT Bombay">Adventure Sports Club IIT Bombay</ion-select-option>  
+         <ion-select-option value="IITB Basketball">IITB Basketball</ion-select-option>  
+         <ion-select-option value="Institute Football league">Institute Football league</ion-select-option>  
+         <ion-select-option value="The Mountaineering Club">The Mountaineering Club</ion-select-option>  
+         <ion-select-option value="IIT Bombay Athletics">IIT Bombay Athletics</ion-select-option>  
+         <ion-select-option value="IITB Ultimate Frisbee">IITB Ultimate Frisbee</ion-select-option>
+         
+         </ion-select>  
+         </ion-item>
+<ion-item>
+  <h3>TECHNICAL PAGES</h3>  
+        <ion-select  [(ngModel)]="club" placeholder="Which sports club?">
+         <ion-select-option value="Krittika">Krittika- Astronomy Club of IIT Bombay</ion-select-option> 
+         <ion-select-option value="wncc">Web and Coding Club, IIT Bombay</ion-select-option>
+         <ion-select-option value="Aeromodelling Club, IIT Bombay">Aeromodelling Club, IIT Bombay</ion-select-option>
+         <ion-select-option value="Biotech Club, IIT Bombay">Biotech Club, IIT Bombay</ion-select-option>
+         <ion-select-option value="IITB Student Satellite Program">IITB Student Satellite Program</ion-select-option>
+         <ion-select-option value="IITB Mars Rover Team">IITB Mars Rover Team</ion-select-option>
+         <ion-select-option value="Electronics and Robotics Club, IIT Bombay">Electronics and Robotics Club, IIT Bombay</ion-select-option>
+         <ion-select-option value="Institute Technical Summer Projects, IIT Bombay">Institute Technical Summer Projects, IIT Bombay</ion-select-option> 
+         <ion-select-option value="Maths and Physics Club, IIT Bombay">Maths and Physics Club, IIT Bombay</ion-select-option>
+         <ion-select-option value="Ham Radio Club, IIT Bombay">Ham Radio Club, IIT Bombay</ion-select-option>
+         <ion-select-option value="Electronics Club, IIT Bombay">Electronics Club, IIT Bombay</ion-select-option>
+<!--<ion-select-option value=""></ion-select-option>
+         <ion-select-option value=""></ion-select-option>
+-->
+         
+         </ion-select>  
+
+</ion-item>
+
+<ion-item>
+  <h3>NON-TECHNICAL PAGES</h3>  
+        <ion-select  [(ngModel)]="club" placeholder="Which non-technical club?">
+         <ion-select-option value="Consult Club IITB">Consult Club IITB</ion-select-option>
+                  
+         <ion-select-option value="Finance Club IIT Bombay">Finance Club IIT Bombay</ion-select-option>
+         
+         <ion-select-option value="Materials Club">Materials Club</ion-select-option>
+         
+         <ion-select-option value="CONSIG, The Consulting Club of SJMSOM, IIT Bombay">CONSIG, The Consulting Club of SJMSOM, IIT Bombay</ion-select-option>
+         
+        
+         
+         </ion-select>  
+
+</ion-item>
+<ion-item>
+  <h3>OTHER PAGES</h3>  
+        <ion-select  [(ngModel)]="club" placeholder="Which other club?">
+         <ion-select-option value="EnB Club, IIT Bombay">EnB Club, IIT Bombay</ion-select-option>
+         <ion-select-option value="Me at IITB">Me at IITB</ion-select-option>
+         <ion-select-option value="Student Alumni Relations Cell - SARC, IIT Bombay">Student Alumni Relations Cell - SARC, IIT Bombay</ion-select-option>
+         <ion-select-option value="Insight, IIT Bombay">Insight, IIT Bombay</ion-select-option>
+
+
+         <ion-select-option value="NSS IIT Bombay">NSS IIT Bombay</ion-select-option>
+         
+         <ion-select-option value="Systematics, The Systems Club of SJMSOM, IIT Bombay">Systematics, The Systems Club of SJMSOM, IIT Bombay</ion-select-option>
+       
+         <ion-select-option value="IIT Bombay Happy Club, Art of Living">IIT Bombay Happy Club, Art of Living</ion-select-option>
+         <ion-select-option value="Institute Student Companion Programme - ISCP, IIT Bombay">Institute Student Companion Programme - ISCP, IIT Bombay</ion-select-option>
+    
+
+
+         <ion-select-option value="IITB Alumni Mumbai Chapter">IITB Alumni Mumbai Chapter</ion-select-option>
+         
+         <ion-select-option value="National Cadet Corps IITB">National Cadet Corps IITB</ion-select-option>
+         
+         <ion-select-option value="IIT Bombay">IIT Bombay</ion-select-option>
+         
+  
+         </ion-select>  
+
+</ion-item>
+
+
+   </ion-card>
+   <h2>{{club | json}}</h2>
+ </div>
+
+
+
+  <div class="box" >
+    <iframe *ngIf="(club=='Krittika')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKrittikaIITB%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="(club=='Aeromodelling Club, IIT Bombay')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faeromodellingiitb%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="(club=='wncc')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwncc.iitb%2F&tabs=timeline&width=1000&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="(club=='Biotech Club, IIT Bombay')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBiotechClubIITB%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="(club=='IITB Student Satellite Program')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fiitb.student.satellite%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="(club=='Electronics and Robotics Club, IIT Bombay')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ferciitb%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="(club=='IITB Mars Rover Team')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fiitb.mrt%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="(club=='Maths and Physics Club, IIT Bombay')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmnpiitb%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="(club=='Institute Technical Summer Projects, IIT Bombay')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fitsp.iitb%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="(club=='Ham Radio Club, IIT Bombay')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHamclubIITB%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="(club=='Electronics Club, IIT Bombay')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Felec.club%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        
+    <!------------------------------------------>
+    <iframe *ngIf="(club=='chess club')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIITBChessClub%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+         <iframe *ngIf="(club=='yogastha')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fyogastha.iitb%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+         <iframe *ngIf="(club=='Institute Football league')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fiitb.ifl%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+         <iframe *ngIf="(club=='Adventure Sports Club IIT Bombay')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fadventureiitb%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+         <iframe *ngIf="(club=='IITB Basketball')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIITB-Basketball-164636386922896%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+         <iframe *ngIf="(club=='IIT Bombay Athletics')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fiitbathletics%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+         <iframe *ngIf="(club=='IIT Bombay Sports')"src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fiitbombaysports&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+         <iframe *ngIf= "(club=='The Mountaineering Club')" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FThe-Mountaineering-Club-IIT-Bombay-119163308159664&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<!--====================================================-->
+    <iframe *ngIf="club=='Culturals@IITB'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIITBCult%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="club=='Rang -The Fine Arts Club of IIT B'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRANG.IITB%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="club=='Surbahaar - IITB'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsurbahaar.iitb%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="club=='The Design Club, IIT Bombay'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthedesignclubiitb%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="club=='Pixels - The Photography Club of IIT Bombay'"src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPixelsIITB%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="club=='Virasat'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRootsIITB&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="club=='Vaani'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvaani.iitb%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <iframe *ngIf="club=='Symphony,IIT Bombay'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSymphony-IIT-Bombay-130455663662157%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<!---------------            *ngIf="club==''"        ------------------------->
+
+<iframe *ngIf="club=='Consult Club IITB'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fconsultclubiitb%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe *ngIf="club=='Finance Club IIT Bombay'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffinanceclubiitb%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe *ngIf="club=='Materials Club'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmaterialsclubiitb%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe *ngIf="club=='CONSIG, The Consulting Club of SJMSOM, IIT Bombay'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FConSIG.SJMSOM.IITB%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe *ngIf="club=='EnB Club, IIT Bombay'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fenbclub%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe *ngIf="club=='IITB Ultimate Frisbee'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fiitbultimatefrisbee%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<!------------------------------------------->
+<iframe *ngIf="club=='Me at IITB'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmeatiitb%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe *ngIf="club=='Student Alumni Relations Cell - SARC, IIT Bombay'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSARC.IITB%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe *ngIf="club=='Insight, IIT Bombay'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Finsight.iitbombay%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe *ngIf="club=='NSS IIT Bombay'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnssiitbombay%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe *ngIf="club=='Systematics, The Systems Club of SJMSOM, IIT Bombay'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsystematics.sjmsom.iitb%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe *ngIf="club=='IIT Bombay Happy Club, Art of Living'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHappyClubIITB%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe *ngIf="club=='Institute Student Companion Programme - ISCP, IIT Bombay'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fiitb.iscp%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<!---------------            *ngIf="club==''"        ------------------------->
+<iframe *ngIf="club=='IITB Alumni Mumbai Chapter'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIITB-Alumni-Mumbai-Chapter-560773833953920%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe *ngIf="club=='National Cadet Corps IITB'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F2MahaEngReg%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe *ngIf="club=='IIT Bombay'" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fiitbombay%2F&tabs=timeline&width=800&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+  </div>
+
+   </ion-content>
 
   
