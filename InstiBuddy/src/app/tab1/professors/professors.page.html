@@ -13,6 +13,6 @@
     <div *ngFor="let prof of response"><ion-row><ion-col width-67><ion-item lines="full">
       <ion-label routerLink='/tabs/tab1/dept/{{ prof.prof_Name }}' routerDirection="forward">{{ prof.prof_Name }}</ion-label>
     </ion-item></ion-col>
-    <ion-col width-33><ion-item lines="full"><ion-label>{{ prof.phone_number }}</ion-label></ion-item></ion-col></ion-row></div>
+    <ion-col width-33><ion-item lines="full" button (click)="Call()"><ion-label>{{ prof.phone_number }}</ion-label></ion-item></ion-col></ion-row></div>
   </ion-list>
 </ion-content>

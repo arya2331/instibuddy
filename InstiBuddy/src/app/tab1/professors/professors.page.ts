@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { NavController } from '@ionic/angular';
 import { ActivatedRoute } from '@angular/router';
+import { CallNumber } from '@ionic-native/call-number/ngx';
 @Component({
   selector: 'app-professors',
   templateUrl: './professors.page.html',
@@ -13,12 +14,15 @@ export class ProfessorsPage implements OnInit {
   public url;
   dept: string;
   response: Object;
-  constructor(private activatedRoute:ActivatedRoute, public navCtrl: NavController, public httpClient: HttpClient) {
+  constructor(private activatedRoute:ActivatedRoute, public navCtrl: NavController, public httpClient: HttpClient,private callNumber: CallNumber) {
     this.baseURL='http://localhost:8000/scrapdata/dept/';
   }
-
-  
-
+  public async Call(){
+    
+    this.callNumber.callNumber("18001010101", true)
+    .then(res => console.log('Launched dialer!', res))
+    .catch(err => console.log('Error launching dialer', err));
+  };
   
   get(){
     let data={
