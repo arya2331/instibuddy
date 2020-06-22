@@ -47,6 +47,16 @@ def api_search_scrapcode_view(request):
         serializer=ScrapcodeSerializer(scrapcode, many=True)
         return Response(serializer.data)
 
+@api_view(['POST',])
+def api_delete_scrapcode_view(request):
+    try:
+        scrapcode= Scrapcode.objects.filter(department=request.data["dept"])
+    except Scrapcode.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+    if request.method== 'POST':
+        scrapcode.delete()
+        return Response({"response":"done"})
+
 def get_Recipe_cese(request):
     # outfile = open("scrape.csv", 'w', newline='')
     # writer = csv.writer(outfile)
@@ -342,6 +352,7 @@ def get_Recipe_cse(request):
         name=name_email[0]
         email=name_email[1]
         area=elems[2].find('td')
+        phone=""
         try:
             office_address=elems[3].find('td')
             phone=elems[4].find('td')
@@ -349,7 +360,7 @@ def get_Recipe_cse(request):
             break
         if None in (name, email, area, office_address, phone):
             continue
-        scrapcode2=Scrapcode(prof_Name=name.text.strip(),email= email.text.strip(),phone_number= phone.text.strip(),expertise=area.text.strip(),department='Computer Science & Engineering')
+        scrapcode2=Scrapcode(prof_Name=name.text.strip(),email= email.text.strip(),phone_number="0222576"+ phone.text.strip()[17:],expertise=area.text.strip(),department='Computer Science & Engineering')
         scrapcode2.save()
         
         # writerow([name.text.strip(), phone.text.strip(), email.text.strip(), office_address.text.strip(),area.text.strip()])
@@ -359,6 +370,7 @@ def get_Recipe_cse(request):
         name=name_email[0]
         email=name_email[1]
         area=elems[2].find('td')
+        phone=""
         try:
             office_address=elems[3].find('td')
             phone=elems[4].find('td')
@@ -366,7 +378,7 @@ def get_Recipe_cse(request):
             break
         if None in (name, email, area, office_address, phone):
             continue
-        scrapcode3=Scrapcode(prof_Name=name.text.strip(),email= email.text.strip(),phone_number= phone.text.strip(),expertise=area.text.strip(),department='Computer Science & Engineering')
+        scrapcode3=Scrapcode(prof_Name=name.text.strip(),email= email.text.strip(),phone_number="0222576"+phone.text.strip()[17:],expertise=area.text.strip(),department='Computer Science & Engineering')
         scrapcode3.save()
         # thewriter.writerow([name.text.strip(), phone.text.strip(), email.text.strip(), office_address.text.strip(),area.text.strip()])
     return HttpResponse(status=201)    
